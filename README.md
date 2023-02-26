@@ -12,8 +12,8 @@
 
 **What did you try and why do you think it did not work?**
 
-1. I used a GitHub page that had code for detecting images(https://gist.github.com/razimgit/d9c91edfd1be6420f58a74e1837bde18). Initially, I started using      all the code from there. But I faced two issues- All the cones were detected but there were parts of the red door also being detected or 13 cones were      being detected. I realized this was the case because of the convex_hull_pointing_up() that was being used. It was custom-made for that picture. So I        made my own version of the manual filtering.
-2. I also realized that I didn’t need most of the code and it was redundant, so I filtered out all the unwanted code.
+1. I used a GitHub page that had code for detecting the cones(https://gist.github.com/razimgit/d9c91edfd1be6420f58a74e1837bde18). Initially, I started        using all the code from there. But I faced two issues- All the cones were detected but there were parts of the red door also being detected or 13 cones    were being detected. I realized this was the case because of the convex_hull_pointing_up() that was being used. It was custom-made for that picture. So    I made my own version of the manual filtering.
+2. I also realized that I didn’t need most of the code and it was redundant, so I filtered out all the unwanted code. I basically didn't end up using          anything apart from the morphologyEx function. 
 
 **What libraries are used**
 
